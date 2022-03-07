@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Hw from './Hw/Hw'
+import TodoList from './TodoList'
+// import Photo from './MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Hw />
+    <TodoList />
   </React.StrictMode>,
   document.getElementById('root')
 );
