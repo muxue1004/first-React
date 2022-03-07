@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Hw from './Hw/Hw'
-import TodoList from './TodoList'
-// import Photo from './MyFirstComponent';
+// import TodoList from './TodoList'
+import Photo from './MyFirstComponent/MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Hw />
-    <TodoList />
+    <Photo />
+    <Photo />
+    {/* <TodoList /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
