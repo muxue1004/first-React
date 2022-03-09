@@ -1,3 +1,5 @@
+import picture from '../MyFirstComponent/OIP-C.jpg'
+
 const today = new Date();
 
 function formatDate(date) {
@@ -12,7 +14,7 @@ function TodoList() {
     <>
       <h1>Hedy Lamarr's Todos</h1>
       <img 
-        src="https://i.imgur.com/yXOvdOSs.jpg" 
+        src={picture}
         alt="Hedy Lamarr" 
         className="photo"
       />

@@ -1,3 +1,5 @@
+import picture from '../MyFirstComponent/OIP-C.jpg'
+
 function Avatar() {
   const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
   const description = 'Gregorio Y. Zara';
@@ -6,8 +8,9 @@ function Avatar() {
     <>
       <img
         className="avatar"
-        src={avatar}
-        alt={description}
+        src = {picture}
+        // src = {avatar}
+        alt = {description}
       />
     </>
   )
