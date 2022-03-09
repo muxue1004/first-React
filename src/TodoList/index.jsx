@@ -1,3 +1,12 @@
+const today = new Date();
+
+function formatDate(date) {
+  return new Intl.DateTimeFormat(
+    'en-US',
+    { weekday: 'long' }
+  ).format(date)
+}
+
 function TodoList() {
   return(
     <>
@@ -7,6 +16,7 @@ function TodoList() {
         alt="Hedy Lamarr" 
         className="photo"
       />
+      <h1>To Do LIST FOR {formatDate(today)}</h1>
       <ul>
           <li>Invent new traffic lights</li>
           <li>Rehearse a movie scene</li>

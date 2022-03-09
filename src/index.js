@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Hw from './Hw/Hw'
-// import TodoList from './TodoList'
+import TodoList from './TodoList'
+import Avatar from './Avatar';
 import Photo from './MyFirstComponent/MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +13,8 @@ ReactDOM.render(
     <Hw />
     <Photo />
     <Photo />
-    {/* <TodoList /> */}
+    <TodoList />
+    <Avatar />
   </React.StrictMode>,
   document.getElementById('root')
 );
