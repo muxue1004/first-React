@@ -1,17 +1,25 @@
-const people = [
-  'Creola Katherine Johnson: mathematician',
-  'Mario José Molina-Pasquel Henríquez: chemist',
-  'Mohammad Abdus Salam: physicist',
-  'Percy Lavon Julian: chemist',
-  'Subrahmanyan Chandrasekhar: astrophysicist'
-];
+import { people } from './data.js';
+import { getImageUrl } from './utils.jsx';
 
 function List() {
-  const listItems = people.map(person =>
-    <li>{person}</li>
+  const chemists = people.filter(person =>
+    person.profession === 'chemist'
   );
 
-  // console.log(listItems);
+  const listItems = chemists.map(person =>
+    <li key={person.id}>
+      <img
+        src={getImageUrl()}
+        alt={person.name}
+        style={{width : '10%'}}
+      />
+      <p>
+        <b>{person.name}:</b>
+        {' ' + person.profession + ' '}
+        known for {person.accomplishment}
+      </p>
+    </li>
+  );
 
   return <ul>{listItems}</ul>;
 }
