@@ -1,0 +1,15 @@
+.board {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dot {
+  position: absolute;
+  background-Color: #ff0000;
+  border-Radius: 50%;
+  left: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+}

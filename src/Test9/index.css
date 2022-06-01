@@ -1,0 +1,28 @@
+.green-block {
+  background-color: rgb(100, 165, 129);
+  height: 100px;
+  width: 100%;
+}
+
+.green-block2 {
+  background-color: rgb(100, 165, 129);
+  width: 100%;
+}
+
+.red-block {
+  background-color: rgb(196, 64, 64);
+  height: 100px;
+  width: 100%;
+}
+
+.blue-block {
+  background-color: rgb(41, 41, 150);
+  height: 100px;
+  width: 100%;
+}
+
+.orange-block {
+  background-color: rgb(255, 166, 0);
+  height: 100px;
+  width: 100%;
+}

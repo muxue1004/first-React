@@ -1,0 +1,17 @@
+.ant-col-8 {
+  background: #00a0e9;
+}
+.ant-col-12{
+  background: #028ac8;
+}
+.ant-col-24{
+  background: #1f7aa4;
+}
+.ant-col-6{
+  background: #49bff6;
+}
+.ant-col {
+  text-align:center;
+  height:5em;
+  line-height: 5em;
+}
