@@ -53,7 +53,6 @@ export default class Jzq extends Component {
     } else if (this.state.turn === 0) {
       t = this.state.x
     }
-    console.log(t)
     for (let i = 0; i < this.state.lines.length; i++){
       if (this.state.Victory === true) {
         break;
@@ -104,8 +103,6 @@ export default class Jzq extends Component {
           ))
         }
         </div>
-        {/* {this.isWiin(this.state.x)}
-        {this.isWiin(this.state.y)} */}
         {this.isWinner()}
       </>
     )
