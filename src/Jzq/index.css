@@ -2,12 +2,20 @@ html body {
   margin: 0;
   padding: 0;
 }
-
-#theBig {
-  width: 150px;
+.theSmall {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-button {
-  height: 50px;
-  width: 50px;
+.theBig {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.theEnd {
+  pointer-events:none;
 }

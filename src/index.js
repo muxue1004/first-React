@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Test9 from './Test9'
+import Jzq from './Jzq'
 
 ReactDOM.render(
     <React.StrictMode>
-      <Test9/>
+      <Jzq/>
     </React.StrictMode>,
   document.getElementById('root')
 );
