@@ -74,17 +74,11 @@ export default class Jzq extends Component {
     }
   }
 
-  isWinner = ()=> {
-    if (this.state.Victory === true && this.state.turn === 1) {
-      return <h1>O玩家获胜</h1>
-    } else if (this.state.Victory === true && this.state.turn === 0) {
-      return <h1>X玩家获胜</h1>
-    }
-  }
-
   thetitle = ()=> {
     if (this.state.Victory === true) {
       return <h1>比赛结束</h1>
+    } else if (this.state.Victory === false && this.state.x.length + this.state.y.length === 9) {
+      return <h1>平局</h1>
     } else if (this.state.turn === 1) {
       return <h1>现在是X玩家的回合</h1>
     } else {
@@ -103,7 +97,7 @@ export default class Jzq extends Component {
           ))
         }
         </div>
-        {this.isWinner()}
+        {this.state.Victory ? this.state.turn ? <h1>O玩家胜利</h1> : <h1>X玩家胜利</h1> : ''}
       </>
     )
   }
